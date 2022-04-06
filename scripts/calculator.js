@@ -216,56 +216,6 @@ function appendButtonTemplate(element) {
     const clone = temp.content.cloneNode(true)
     element.appendChild(clone)
 }
-let cat = document.querySelector("img");
-let angle = Math.PI / 2;
-function animate(time, lastTime) {
-    if (lastTime != null) {
-        angle += (time - lastTime) * 0.001;
-    }
-    cat.style.top = (Math.sin(angle) * 20) + "px";
-    cat.style.left = (Math.cos(angle) * 200) + "px";
-    requestAnimationFrame(newTime => animate(newTime, time));
-}
-
-// requestAnimationFrame(animate);
-
-function findSolution(target) {
-    function find(current, history) {
-        if (current === target) {
-            return history;
-        } else if (current > target) {
-            return null;
-        } else {
-            return find(current + 5, `(${history} + 5)`) ||
-                find(current * 3, `(${history} * 3)`);
-        }
-    }
-    return find(1, "1");
-}
-console.log(">> " + findSolution(24) + "     :: findSolution(24)");
-
-function deepEqual(a, b) {
-    let property;
-    if (a === b) return true;
-
-    if (a == null || typeof a != "object" ||
-        b == null || typeof b != "object")
-        return false;
-
-    let propertyInA = 0
-    for (property in a) propertyInA += 1;
-
-    let propertyInB = 0;
-    for (property in b) {
-        propertyInB += 1;
-
-        if (!(property in a) || !deepEqual(a[property], b[property])) return false;
-    }
-    return propertyInA === propertyInB;
-}
-const obj = {here: {is: "an"}, object: 2};
-console.log(">> " + deepEqual(obj, obj) + "     :: deepEqual(obj, obj)");
-console.log(">> " + deepEqual(obj, {here: {is: "an"}, object: 2}) + "     :: deepEqual(obj, {here: {is: \"an\"}, object: 2}));");
 
 function repeat(n, action) {
     for (let i = 0; i < n; i++) {
