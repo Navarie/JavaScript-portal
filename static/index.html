@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>To-do!</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/to-do-list.css"/>
+</head>
+
+<body>
+<nav>
+    <div class="menu">
+        <nav>
+            <ul class="pagesHeader">
+                <li class="tab"><a href="index.html">To-do list</a></li>
+                <li class="tab"><a href="calculator.html">Calculator</a></li>
+            </ul>
+        </nav>
+        <div class="browse">
+            <div id="menu-header" class="menuHeader">
+                <label for="menu-input"></label><input type="text" id="menu-input"
+                                                       placeholder="Enter title of to-do list...">
+                <span class="addListButton">Add</span>
+                <span class="resetButton">Reset</span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<template>
+    <div id="list-header" class="listHeader">
+        <h3 id="placeholder-title"></h3>
+        <span id="placeholder-minimise" class="minimiseButton">Hide</span>
+        <span id="placeholder-moveto" class="moveToButton">>> Move item HERE</span>
+        <label for="list-input"></label><input type="text" id="list-input" placeholder="Enter item...">
+        <span class="addEntryButton">Add</span>
+    </div>
+    <ul id="list-unsorted-list"></ul>
+</template>
+
+<div class="leftColumn"></div>
+<div class="rightColumn"></div>
+
+<script src="../scripts/todo-list.js"></script>
+</body>
+</html>

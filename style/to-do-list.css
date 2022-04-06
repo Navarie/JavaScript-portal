@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cochin, Cambria, Georgia, Times, Times New Roman, serif;
+    font-size: 1.4rem;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+    /* === Headings. =================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    padding: 0;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+h2 {
+    padding: 0;
+    font-size: 2.2rem;
+}
+
+h3 {
+    float: left;
+    width: 92%;
+    padding-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #00b7ffb6;
+}
+
+h4 {
+    padding: 0;
+    font-size: 2.2rem;
+    text-align: left;
+}
+
+.header {
+    padding: 0;
+    font-size: 3.2rem;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+    /* Menu elements. */
+.tab {
+    font-size: 1.5rem;
+    color: #15ff39;
+    display: inline;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    margin-right: 1rem;
+    padding: 12px 12px;
+}
+.tab:hover {
+    color: #15ff39;
+    background-color: rgb(67, 100, 10);
+}
+
+.menu, nav {
+    padding: 1rem 1rem;
+    margin: -10px;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration-color: #f1f1f1;
+}
+
+.menu, nav, pagesHeader {
+    padding: 0.5rem;
+    margin: -8px;
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    text-decoration-color: #f1f1f1;
+}
+
+.menu browse {
+    display: inline;
+    text-align: center;
+    margin-right: 1rem;
+    padding: 0.25rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #19ff00;
+}
+
+    /* The two main columns of the page display. */
+.leftColumn {
+    float: left;
+    padding: 0.6rem;
+    width: 50%;
+}
+
+.rightColumn {
+    float: left;
+    width: 50%;
+    padding: 0.6rem 0.6rem 0.6rem 20px;
+}
+
+.rubric {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+    /* Styling list elements. */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 9px 12px 35px;
+    background: #e0e0e0;
+    font-size: 16px;
+}
+
+ul li.checked {
+    background: rgb(117, 117, 117);
+    color: #f1f1f1;
+    text-decoration: line-through;
+}
+
+ul li:hover {
+    background: rgb(199, 199, 199);
+}
+
+.check {
+    width: 7%;
+}
+
+.header {
+    background-color: #303030;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.listHeader {
+    padding: 0;
+    text-align: center;
+}
+
+.listHeader:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menuHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 50px;
+    text-align: center;
+}
+
+.menuHeader:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    float: left;
+    padding: 10px;
+    width: 83%;
+    margin: 0;
+    font-size: 16px;
+}
+
+#menu-input {
+    float: left;
+    padding: 12px;
+    width: 84%;
+    margin: 0;
+    font-size: 16px;
+}
+
+    /* =============================== BUTTONS ================================== */
+.addEntryButton {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    background: #b0e7ff;
+    color: rgb(49, 46, 46);
+    cursor: pointer;
+    font-size: 16px;
+    width: 17%;
+}
+.addEntryButton:hover {
+    background-color: #bbb;
+}
+.addEntryButton:hover {
+    background-color: rgb(58, 197, 100);
+}
+
+.addListButton {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    width: 10%;
+    background: rgb(2, 141, 196);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+}
+.addListButton:hover {
+    background-color: #00b7ff;
+}
+
+.resetButton {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    width: 6%;
+    background: rgb(52, 108, 124);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+}
+.resetButton:hover {
+    background-color: #ff7f76;
+}
+
+.deletion {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+.deletion:hover {
+    background-color: #ff7f76;
+}
+
+.moveButton {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    text-align: center;
+    color: rgb(49, 46, 46);
+    background: rgb(178, 235, 206);
+    cursor: pointer;
+    font-size: 16px;
+}
+.moveButton:hover {
+    background: #6ee26c;
+}
+
+.minimiseButton {
+    float: left;
+    text-align: center;
+    padding: 0;
+    width: 8%;
+    background: #ffd5d5;
+    color: rgb(49, 46, 46);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.moveToButton {
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    padding: 0;
+    width: 11%;
+    background: #e9e62c;
+    color: rgb(49, 46, 46);
+    cursor: pointer;
+    font-size: 18px;
+}
+.moveToButton:hover {
+    background: #0ddf1f;
+}
+
+.maximiseButton {
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px;
+    width: 25%;
+    background: #f1f1f1;
+    color: rgb(49, 46, 46);
+    cursor: pointer;
+    font-size: 16px;
+}
+.maximiseButton:hover {
+    background-color: rgb(110, 255, 81);
+}

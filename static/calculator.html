@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>To-do!</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/calculator.css"/>
+</head>
+
+<body>
+<nav>
+    <div class="menu">
+        <nav>
+            <ul class="pagesHeader">
+                <li class="tab"><a href="index.html">To-do list</a></li>
+                <li class="tab"><a href="calculator.html">Calculator</a></li>
+            </ul>
+        </nav>
+        <div class="browse">
+            <div id="menu-header" class="menuHeader">
+                <label for="menu-input"></label><input type="text" id="menu-input"
+                                                       placeholder="Enter computation... ">
+                <span id="compute-button" class="computeButton">Compute&nbsp;&nbsp;&#9166;</span>
+                <span class="resetButton">Reset</span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<template>
+    <div id="array-rubric">
+        <h3>Arrays</h3>
+        <label for="list-input"></label><input type="text" id="list-input" placeholder="<Enter elements: 1,4,27,4.29> | <Click stored array to select>">
+        <span id="addArrayButton" class="addEntryButton">Add</span>
+    </div>
+    <div id="array-buttons">
+        <div id="average-button" class="genericButton">AVG[]</div>
+        <div id="summation-button" class="genericButton">Sum[]</div>
+    </div>
+    <div id="array-container"></div>
+</template>
+
+<template>
+        <h3>Calculator Supreme</h3>
+        <label for="calculator-input"></label><input type="text" id="calculator-input" placeholder="<Enter necessary variables here> | <Result>">
+        <div id="button-container">
+                <div id="powerButton" class="genericButton">n&sup2;</div>
+                <div id="square-root-button" class="genericButton">&radic;n</div>
+                <div id="oneOverInputButton" class="genericButton">1/n</div>
+                <div id="logarithm-button" class="genericButton">log&#8322;(n)</div>
+                <div id="area-circle-button" class="genericButton">A(circle)</div>
+                <div id="quadratic-equation-button" class="genericButton">S(ax&sup2;+bx+c = 0)</div>
+                <div id="generate-quote-button" class="genericButton">GEN(quote)</div>
+        </div>
+</template>
+
+<div class="leftColumn"></div>
+<div class="rightColumn"></div>
+
+<script src="../scripts/calculator.js"></script>
+</body>
+</html>
